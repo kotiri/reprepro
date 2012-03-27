@@ -100,8 +100,8 @@ template "#{node['apache']['dir']}/sites-available/apt_repo.conf" do
   )
 end
 
-apache_site "apt_repo.conf"
+apache2_site "apt_repo.conf"
 
-apache_site "000-default" do
+apache2_site "000-default" do
   enable false
 end
