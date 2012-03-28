@@ -103,5 +103,5 @@ end
 apache2_site "apt_repo.conf"
 
 apache2_site "000-default" do
-  enable false
+  action :disable
 end
